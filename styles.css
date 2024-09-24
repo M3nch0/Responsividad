@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Color de fondo claro */
+}
+
+/* Encabezado con logo y menú */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0033A0; /* Azul corporativo de Cognizant */
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #0056D2; /* Azul más claro */
+    border-radius: 5px;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+}
+
+#inicio {
+    background-color: #e6f7ff; /* Azul muy claro */
+    text-align: center;
+}
+
+#servicios ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#servicios li {
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#proyectos .proyecto {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#contacto a {
+    color: #0033A0; /* Azul corporativo */
+    text-decoration: none;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0033A0; /* Azul corporativo */
+    color: white;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #servicios li, #proyectos .proyecto {
+        padding: 10px;
+    }
+}
